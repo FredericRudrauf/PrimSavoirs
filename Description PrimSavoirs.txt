@@ -1,0 +1,42 @@
+Spécificités du projet PrimSavoirs :
+
+Objectif du site web :
+Le site doit permettre de faire des révisions en mathématiques (calculs avec les différentes opérations) et en français (conjugaison, orthographe) (plus tard, on pourra réfléchir à de l'anglais).
+Pour les mathématiques, on doit avoir la possibilité de faire :
+- des additions
+- des soustractions
+- des multiplications
+- des divisions
+Avec des boites à cocher, on pourrait pouvoir choisir si on veut mixer les types d'opérations.
+Ensuite, pour faire ces calculs, on peut choisir plusieurs types de 'jeux' :
+- un maximum de bonnes réponses en x secondes (30, 60, ...)
+- un ensemble de x calculs (10, 20 ...)
+
+
+Interface :
+Barre de navigation en haut de l'écran, quoi doit rester tout le temps visible, même lorsqu'on descend dans le bas de la fenêtre. Liste des menus de gauche à droite.
+
+
+Base de données :
+Pour les questions en français, il faut peut-être stocker des listes de mots, des verbes conjugués. Pour faire simple au départ, est-ce qu'on pourrait utiliser des fichiers json ?
+
+Technologies utilisées :
+HTML5, CSS3(Bootstrap), Frontend Javascript (avec Vue.js, Vite), Backend avec script Python
+
+Thème graphique :
+Ambiance colorée pour donner envie aux enfants
+
+Structure du projet :
+prim-savoirs/
+├── backend/
+│   ├── main.py              # API FastAPI
+│   └── requirements.txt     # dépendances backend
+├── frontend/
+│   ├── index.html
+│   ├── vite.config.js
+│   ├── package.json
+│   └── src/
+│       ├── App.vue
+│       ├── main.js
+│       └── components/
+│           └── MathGame.vue
