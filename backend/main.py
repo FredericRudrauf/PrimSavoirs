@@ -72,5 +72,6 @@ def get_math_exercises(
     return {"exercises": exercises}
 
 # Servir le frontend buildé (Vite)
-app.mount("/", StaticFiles(directory="static", html=True), name="static")
+static_dir = os.path.join(os.path.dirname(__file__), "..", "static")
+app.mount("/", StaticFiles(directory=static_dir, html=True), name="static")
 
